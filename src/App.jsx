@@ -5,6 +5,8 @@ import Intro from './PartesPages/Intro';
 import ExpLaboral from './PartesPages/ExpLaboral';
 import Proyectos from './PartesPages/Proyectos';
 import SobreMi from './PartesPages/SobreMi';
+import Navbar from './PartesPages/Navbar';
+import Footer from './PartesPages/Footer';
 
 
 function App() {
@@ -12,19 +14,12 @@ function App() {
 
   return (
     <>
-    <ul>
-      <li>Experiencia</li>
-      <li>Proyectos</li>
-      <li>Sobre mí</li>
-      <li>Contacto</li>
-
-    </ul>
-
+      <Navbar/>
       <Intro/>
       <ExpLaboral/>
       <Proyectos/>
       <SobreMi/>
-    
+      <Footer/>
     </>
   )
 }

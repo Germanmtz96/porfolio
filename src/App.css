@@ -145,3 +145,22 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.footer a{
+margin-right: 10px;
+text-decoration: none;
+color: rgb(75 85 99);
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: rgb(20, 85, 99);
+  font-weight: bold;
+}
+.navbar{
+  text-decoration: none;
+  color: rgb(75 85 99);
+}
+.navbar:hover,
+.navbar:focus,
+.navbar:active {
+  color: rgb(59, 93, 247);
+}

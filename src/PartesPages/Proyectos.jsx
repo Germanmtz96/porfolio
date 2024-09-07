@@ -19,7 +19,6 @@ import rest from '../assets/iconos/rest-api.png'
 import reixelhome from '../assets/reixelhomeimg.png'
 import animeweb from '../assets/animewebhome.png'
 import juegonaves from '../assets/juegonaves.png'
-import HtmlIcon from '@mui/icons-material/Html';
 import js from '../assets/iconos/js.png'
 import css from '../assets/iconos/css.png'
 import html from '../assets/iconos/html.png'
@@ -33,7 +32,7 @@ function Proyectos() {
 Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcamp, Spaceships Game demuestra mi capacidad para aplicar conocimientos teóricos a proyectos prácticos y desafiantes.`
 
   return (
-    <div className='proyectos'>
+    <div id="proyectos" className='proyectos'>
         <h1 icon={<CodeIcon style={{color:'#1b1b35', marginRight:'5px'}} sx={{ width: 30, height: 30 }}/>} label="Proyectos" className="saira-semi-condensed-semibold" style={{backgroundColor:'white', fontSize:'30px', color:'#1b1b35', marginTop:'60px', marginBottom:'0px',letterSpacing : '0.7px'}}> &lt;/&gt; Proyectos</h1>
         <div className='container-proyecto'>
             <img src={reixelhome} style={{width:'100%', borderRadius:'10px', marginTop:'20px',marginBottom:'20px'}} />

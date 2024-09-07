@@ -11,7 +11,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 function ExpLaboral() {
   return (
     <>
-        <div style={{display:'flex', flexDirection:'row'}}>
+        <div id="experiencia" style={{display:'flex', flexDirection:'row'}}>
       <Chip icon={<WorkIcon style={{color:'#1b1b35', marginRight:'5px'}} sx={{ width: 30, height: 30 }}/>} style={{backgroundColor:'white', color:'#1b1b35', marginTop:'65px', marginBottom:'80px', marginRight:'-15px'}}></Chip>
       <h1 className="saira-semi-condensed-semibold" style={{backgroundColor:'white', fontSize:'30px', color:'#1b1b35', marginTop:'60px', marginBottom:'30px',letterSpacing : '0.7px'}}>Experiencia laboral</h1>
         </div>
