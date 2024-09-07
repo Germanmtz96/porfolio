@@ -97,17 +97,21 @@
 }
 
 .hover-effect {
-  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  transition: background-color 0.3s, color 0.3s;
 }
-
+.hover-effect .icon {
+  transition: color 0.3s;
+}
 .hover-effect:hover {
-  background-color:#1b1b35!important; /* Fondo negro al pasar el ratón */
-  color: white!important; /* Color del texto blanco al pasar el ratón */
-
+  background-color:#1b1b35!important;
+  color: white!important;
+}
+.hover-effect:hover .icon{
+  color: white!important;
 }
 
 .hover-effect:hover .MuiChip-icon {
-  color: white; /* Asegura que el color del icono sea blanco cuando el contenedor está en hover */
+  color: white; 
 }
 
 
@@ -124,8 +128,20 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: -600px;
+ position: relative;
+ transform: translate(-50%, 0%);
+ width:700px;
 }
 .container-exp{
   margin-bottom: 30px;
+}
+.enlaces-proyecto Button{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }

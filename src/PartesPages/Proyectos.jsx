@@ -4,24 +4,40 @@ import Button from '@mui/material/Button';
 import CodeIcon from '@mui/icons-material/Code'
 import Avatar from "@mui/material/Avatar";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload'
+import TextPreview from '../Componentes/TextPreview'
 
+import LinkIcon from '@mui/icons-material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import react from '../assets/iconos/react.png'
 import bootstrap from '../assets/iconos/bootstrap.png'
 import axios from '../assets/iconos/axios.png'
-import cloudinary from '../assets/iconos/cloudinary.png'
 import jwt from '../assets/iconos/jwt.png'
 import mongodb from '../assets/iconos/mongodb.png'
 import node from '../assets/iconos/node-js.png'
 import nodemailer from '../assets/iconos/nodemailer.png'
 import rest from '../assets/iconos/rest-api.png'
+import reixelhome from '../assets/reixelhomeimg.png'
+import animeweb from '../assets/animewebhome.png'
+import juegonaves from '../assets/juegonaves.png'
+import HtmlIcon from '@mui/icons-material/Html';
+import js from '../assets/iconos/js.png'
+import css from '../assets/iconos/css.png'
+import html from '../assets/iconos/html.png'
+import localstorage from '../assets/iconos/localstorage.png'
 
 function Proyectos() {
+
+  const reixelText = `Desarrollo de una aplicación web Full-Stack que permite a los usuarios, tras un proceso de autenticación, registrarse para gestionar citas o interactuar con imágenes mediante comentarios y "likes" desde cualquier dispositivo. Las imágenes y citas son publicadas exclusivamente por un administrador, quien también gestiona una agenda privada con todas las fechas y horarios de las citas, así como una base de datos que almacena los datos de contacto de todos los usuarios. Creado desde cero con Express.js, React y Bootstrap.`
+  const animewebText = `SearchAnime es un proyecto web que desarrollé en colaboración con mi compañero de IronHack, Huanye. El sitio está enfocado en el front-end y permite a los usuarios buscar cualquier tipo de anime a través de una API externa. Una característica destacada es la posibilidad de agregar comentarios a los animes buscados, proporcionando una experiencia interactiva, aunque no se implementaron sistemas de autenticación ni roles de usuario. Este proyecto fue una excelente oportunidad para aplicar y consolidar mis conocimientos en desarrollo web, trabajando en equipo en un entorno ágil. Además, utilizamos varias ramas en GitHub para integrar y gestionar eficientemente los avances de cada uno. Creado desde cero con React y Bootstrap.`
+  const gameText = ` Como mi primer proyecto, Spaceships Game es un juego interactivo basado en web que ofrece una experiencia de juego atractiva. Muestra habilidades de programación, diseño de juegos y desarrollo de interfaces de usuario.
+Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcamp, Spaceships Game demuestra mi capacidad para aplicar conocimientos teóricos a proyectos prácticos y desafiantes.`
+
   return (
     <div className='proyectos'>
         <h1 icon={<CodeIcon style={{color:'#1b1b35', marginRight:'5px'}} sx={{ width: 30, height: 30 }}/>} label="Proyectos" className="saira-semi-condensed-semibold" style={{backgroundColor:'white', fontSize:'30px', color:'#1b1b35', marginTop:'60px', marginBottom:'0px',letterSpacing : '0.7px'}}> &lt;/&gt; Proyectos</h1>
         <div className='container-proyecto'>
-            <img src="" alt="" />
-            <h1 className="saira-semi-condensed-semibold" style={{color: '#1b1b35', fontSize: '22px', margin:'0px'}}>Reixelnails - Gestor de citas e interacción social</h1>
+            <img src={reixelhome} style={{width:'100%', borderRadius:'10px', marginTop:'20px',marginBottom:'20px'}} />
+            <h1 className="saira-semi-condensed-semibold" style={{color: '#1b1b35', fontSize: '22px', margin:'0px', marginBottom:'10px'}}>Reixelnails - Gestor de citas e interacción social</h1>
             <div className='etiquetas-proyecto'>
 
             <Chip style={{backgroundColor:'#0f0f3e', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='React' avatar={<Avatar src={react} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
@@ -35,19 +51,80 @@ function Proyectos() {
             <Chip style={{backgroundColor:'#a04057', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Nodemailer' avatar={<Avatar src={nodemailer} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
 
             </div>
-            <p className="saira-semi-condensed-regular">
+            <TextPreview text={reixelText} />
+            {/* <p className="saira-semi-condensed-regular" style={{color:'rgb(75 85 99)'}}>
             Desarrollo de una aplicación web Full-Stack que permite a los usuarios, tras un proceso de autenticación, registrarse para gestionar citas o interactuar con imágenes mediante comentarios y "likes" desde cualquier dispositivo. Las imágenes y citas son publicadas exclusivamente por un administrador, quien también gestiona una agenda privada con todas las fechas y horarios de las citas, así como una base de datos que almacena los datos de contacto de todos los usuarios. Creado desde cero con Express.js, React y Bootstrap.
-            </p>
+            </p> */}
             <div className='enlaces-proyecto'>
-            <Button variant="outlined" size="medium">
+            <Button className="hover-effect" variant="outlined" size="medium" onClick={() => window.location.href = 'https://github.com/Germanmtz96/M3_webnails'} style={{backgroundColor:'#f3f3f3', textTransform:'capitalize',marginRight:'15px', color:'#1b1b35', borderColor:'#dadada'}}>
+              <GitHubIcon className="icon" style={{marginRight:'8px', height:'24px', color:'#1b1b35'}}/>
           Code
         </Button>
-        <Button variant="outlined" size="medium" style={{backgroundColor:'#f3f3f3', textTransform:'capitalize'}}>
-            
+        <Button className="hover-effect" variant="outlined" size="medium" onClick={() => window.location.href = 'https://reixelnails.netlify.app'} style={{backgroundColor:'#f3f3f3', textTransform:'capitalize', color:'#1b1b35', borderColor:'#dadada'}}>
+        <LinkIcon className="icon" style={{marginRight:'8px', height:'24px', color:'#1b1b35'}}/>
           Preview
         </Button>
             </div>
         </div>
+
+        <div className='container-proyecto' style={{marginTop:'40px'}}>
+            <img src={animeweb} style={{width:'100%', borderRadius:'10px', marginTop:'20px',marginBottom:'20px'}} />
+            <h1 className="saira-semi-condensed-semibold" style={{color: '#1b1b35', fontSize: '22px', margin:'0px', marginBottom:'10px'}}>SearchAnime - Proyecto web de búsqueda de anime</h1>
+            <div className='etiquetas-proyecto'>
+
+            <Chip style={{backgroundColor:'#0f0f3e', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='React' avatar={<Avatar src={react} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#bb84d5', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Bootstrap' avatar={<Avatar src={bootstrap} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#ddbf27', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Node.js' avatar={<Avatar src={node} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#40a08c', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='REST API' avatar={<Avatar src={rest} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#6340a0', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Axios' avatar={<Avatar src={axios} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+
+            </div>
+            <TextPreview text={animewebText} />
+            {/* <p className="saira-semi-condensed-regular" style={{color:'rgb(75 85 99)'}}>
+            SearchAnime es un proyecto web que desarrollé en colaboración con mi compañero de IronHack, Huanye. El sitio está enfocado en el front-end y permite a los usuarios buscar cualquier tipo de anime a través de una API externa. Una característica destacada es la posibilidad de agregar comentarios a los animes buscados, proporcionando una experiencia interactiva, aunque no se implementaron sistemas de autenticación ni roles de usuario. Este proyecto fue una excelente oportunidad para aplicar y consolidar mis conocimientos en desarrollo web, trabajando en equipo en un entorno ágil. Además, utilizamos varias ramas en GitHub para integrar y gestionar eficientemente los avances de cada uno. Creado desde cero con React y Bootstrap.
+            </p> */}
+            <div className='enlaces-proyecto'>
+            <Button className="hover-effect" variant="outlined" size="medium" onClick={() => window.location.href = 'https://github.com/Germanmtz96/M2-anime-web'} style={{backgroundColor:'#f3f3f3', textTransform:'capitalize',marginRight:'15px', color:'#1b1b35', borderColor:'#dadada'}}>
+              <GitHubIcon className="icon" style={{marginRight:'8px', height:'24px', color:'#1b1b35'}}/>
+          Code
+        </Button>
+        <Button className="hover-effect" variant="outlined" size="medium" onClick={() => window.location.href = 'https://searchanimes.netlify.app'} style={{backgroundColor:'#f3f3f3', textTransform:'capitalize', color:'#1b1b35', borderColor:'#dadada'}}>
+        <LinkIcon className="icon" style={{marginRight:'8px', height:'24px', color:'#1b1b35'}}/>
+          Preview
+        </Button>
+            </div>
+        </div>
+        
+        <div className='container-proyecto' style={{marginTop:'40px'}}>
+            <img src={juegonaves} style={{width:'100%', borderRadius:'10px', marginTop:'20px',marginBottom:'20px'}} />
+            <h1 className="saira-semi-condensed-semibold" style={{color: '#1b1b35', fontSize: '22px', margin:'0px', marginBottom:'10px'}}>SearchAnime - Proyecto web de búsqueda de anime</h1>
+            <div className='etiquetas-proyecto'>
+
+            <Chip style={{backgroundColor:'#0f0f3e', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='HTML' avatar={<Avatar src={html} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#ff9532', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='JavaScript' avatar={<Avatar src={js} style={{backgroundColor:'#1b1b3500', height:'24px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#ddbf27', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='CSS' avatar={<Avatar src={css} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#548e39', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Local Storage' avatar={<Avatar src={localstorage} style={{backgroundColor:'#1b1b3500', height:'18px', width:'18px', padding:'5px'}}/>} />
+            <Chip style={{backgroundColor:'#40a08c', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Manipulación de DOM'  />
+            <Chip style={{backgroundColor:'#6340a0', color:'white', padding:'5px', marginRight:'10px', marginBottom:'10px'}} size="small" label='Clases JS'  />
+
+            </div>
+            <TextPreview text={gameText} />
+             {/* <p className="saira-semi-condensed-regular" style={{color:'rgb(75 85 99)'}}>
+            Como mi primer proyecto, Spaceships Game es un juego interactivo basado en web que ofrece una experiencia de juego atractiva. Muestra habilidades de programación, diseño de juegos y desarrollo de interfaces de usuario.
+Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcamp, Spaceships Game demuestra mi capacidad para aplicar conocimientos teóricos a proyectos prácticos y desafiantes.
+            </p>  */}
+            <div className='enlaces-proyecto'>
+            <Button className="hover-effect" variant="outlined" size="medium" onClick={() => window.location.href = 'https://github.com/Germanmtz96/spaceships_game?tab=readme-ov-file'} style={{backgroundColor:'#f3f3f3', textTransform:'capitalize',marginRight:'15px', color:'#1b1b35', borderColor:'#dadada'}}>
+              <GitHubIcon className="icon" style={{marginRight:'8px', height:'24px', color:'#1b1b35'}}/>
+          Code
+        </Button>
+        <Button className="hover-effect" variant="outlined" size="medium" onClick={() => window.location.href = 'https://germanmtz96.github.io/spaceships_game/'} style={{backgroundColor:'#f3f3f3', textTransform:'capitalize', color:'#1b1b35', borderColor:'#dadada'}}>
+        <LinkIcon className="icon" style={{marginRight:'8px', height:'24px', color:'#1b1b35'}}/>
+          Preview
+        </Button>
+            </div>
+        </div>
+
     </div>
   )
 }

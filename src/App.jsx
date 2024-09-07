@@ -4,6 +4,7 @@ import './App.css'
 import Intro from './PartesPages/Intro';
 import ExpLaboral from './PartesPages/ExpLaboral';
 import Proyectos from './PartesPages/Proyectos';
+import SobreMi from './PartesPages/SobreMi';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Intro/>
       <ExpLaboral/>
       <Proyectos/>
+      <SobreMi/>
     
     </>
   )
