@@ -1,5 +1,4 @@
 #root {
- 
   margin: 0 auto;
   padding: 1rem;
 }
@@ -163,4 +162,24 @@ color: rgb(75 85 99);
 .navbar:focus,
 .navbar:active {
   color: rgb(59, 93, 247);
+}
+.scroll{
+  padding: 5px;
+    padding-right:20px;
+    padding-left:20px;
+     background-color: white;
+      border-radius:20px;
+       color: rgb(75 85 99);
+
+       transition: background-color 0.3s ease;
+}
+.fixed{
+  border-radius:20px;
+  padding: 5px;
+  padding-right:20px;
+  padding-left:20px;
+  position: fixed;
+  background-color: #f0f0f081;
+  top: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
