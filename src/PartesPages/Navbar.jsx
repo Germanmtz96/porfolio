@@ -1,58 +1,71 @@
-import React, { useEffect, useRef, useState } from 'react'
-import Stack from '@mui/material/Stack';
+import React, { useEffect, useState } from "react";
+import Stack from "@mui/material/Stack";
 
 function Navbar() {
-
-    const [activeLink, setActiveLink] = useState('');
-    const [isFixed, setIsFixed] = useState(false);
-    const stackRef = useRef(null);
+  const [isFixed, setIsFixed] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      // Determina si el stack debe ser fijo
-      const stack = stackRef.current;
-      if (stack) {
-        const stackOffset = stack.offsetTop;
+      setIsFixed(window.scrollY > 0);
 
-        if (window.pageYOffset > stackOffset) {
-          setIsFixed(true);
-        } else {
-          setIsFixed(false);
-        }
-      }
+      const sections = document.querySelectorAll("section");
+      let currentSection = "";
 
-      // Maneja los enlaces activos
-      const sections = document.querySelectorAll('section');
-      let current = '';
-
-      sections.forEach(section => {
+      sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-        if (window.pageYOffset >= sectionTop - 60 && window.pageYOffset < sectionTop + sectionHeight - 60) {
-          current = section.getAttribute('id');
+
+        if (
+          window.scrollY >= sectionTop - 60 &&
+          window.scrollY < sectionTop + sectionHeight - 60
+        ) {
+          currentSection = section.getAttribute("id");
         }
       });
 
-      setActiveLink(current);
+      setActiveLink(currentSection);
     };
 
-    // Agregar el evento de scroll
-    window.addEventListener('scroll', handleScroll);
-    
-    // Limpiar el evento de scroll cuando el componente se desmonte
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div style={{display:'flex', justifyContent:'center',marginTop:'-20px'}}>
-        <Stack direction="row"  className={`${isFixed ? 'fixed' : 'scroll'} saira-semi-condensed-medium`} spacing={1} >
-        <a href="#experiencia" className={`navbar ${activeLink === 'experiencia' ? 'active' : ''}`}>Experiencia</a>
-        <a href="#proyectos" className={`navbar ${activeLink === 'proyectos' ? 'active' : ''}`}>Proyectos</a>
-        <a href="#sobre-mi" className={`navbar ${activeLink === 'sobre-mi' ? 'active' : ''}`}>Sobre mí</a>
-      <a href="mailto:germanmtz96@outlook.com" className='navbar'>Contacto</a>
-    </Stack>
+    <div
+      style={{ display: "flex", justifyContent: "center", marginTop: "-20px" }}
+    >
+      <Stack
+        direction="row"
+        className={`${
+          isFixed ? "fixed" : ""
+        } saira-semi-condensed-medium scroll`}
+        spacing={1}
+      >
+        <a
+          href="#experiencia"
+          className={`navbar ${activeLink === "experiencia" ? "active" : ""}`}
+        >
+          Experiencia
+        </a>
+        <a
+          href="#proyectos"
+          className={`navbar ${activeLink === "proyectos" ? "active" : ""}`}
+        >
+          Proyectos
+        </a>
+        <a
+          href="#sobre-mi"
+          className={`navbar ${activeLink === "sobre-mi" ? "active" : ""}`}
+        >
+          Sobre mí
+        </a>
+        <a href="mailto:germanmtz96@outlook.com" className="navbar">
+          Contacto
+        </a>
+      </Stack>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

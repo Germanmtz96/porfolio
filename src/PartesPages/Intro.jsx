@@ -7,7 +7,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import foto from "../assets/fotoperfil.jpg";
 
 function Intro() {
-
   return (
     <div className="presentacion">
       <div className="presentacion-top">
@@ -23,7 +22,12 @@ function Intro() {
           label="Disponible para trabajar"
           color="primary"
           variant="outlined"
-          onClick={() => window.location.href = 'https://www.linkedin.com/in/germ%C3%A1n-mart%C3%ADnez-sanch%C3%A9z-a095a4318/'}
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/germ%C3%A1n-mart%C3%ADnez-sanch%C3%A9z-a095a4318/",
+              "_blank"
+            )
+          }
         />
       </div>
       <h1
@@ -33,7 +37,7 @@ function Intro() {
         Hola, soy Germán
       </h1>
       <p
-        style={{ fontSize: "20px", color: 'rgb(75 85 99)' }}
+        style={{ fontSize: "20px", color: "rgb(75 85 99)" }}
         className="saira-semi-condensed-medium"
       >
         Un aspirante a{" "}
@@ -64,7 +68,9 @@ function Intro() {
           icon={<ForwardToInboxIcon sx={{ fontSize: 16 }} />}
           label="Contáctame"
           variant="outlined"
-          onClick={() => window.location.href = 'mailto:germanmtz96@outlook.com'}
+          onClick={() =>
+            (window.location.href = "mailto:germanmtz96@outlook.com")
+          }
         />
         <Chip
           style={{ padding: "10px", letterSpacing: "0.3px", fontSize: "14px" }}
@@ -72,7 +78,12 @@ function Intro() {
           icon={<LinkedInIcon sx={{ fontSize: 16 }} />}
           label="LinkedIn"
           variant="outlined"
-          onClick={() => window.location.href = 'https://www.linkedin.com/in/germ%C3%A1n-mart%C3%ADnez-sanch%C3%A9z-a095a4318/'}
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/germ%C3%A1n-mart%C3%ADnez-sanch%C3%A9z-a095a4318/",
+              "_blank"
+            )
+          }
         />
       </div>
     </div>
