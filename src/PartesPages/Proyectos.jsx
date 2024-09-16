@@ -5,6 +5,8 @@ import CodeIcon from "@mui/icons-material/Code";
 import Avatar from "@mui/material/Avatar";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import TextPreview from "../Componentes/TextPreview";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import LinkIcon from "@mui/icons-material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -16,19 +18,46 @@ import mongodb from "../assets/iconos/mongodb.png";
 import node from "../assets/iconos/node-js.png";
 import nodemailer from "../assets/iconos/nodemailer.png";
 import rest from "../assets/iconos/rest-api.png";
-import reixelhome from "../assets/reixelhomeimg.png";
-import animeweb from "../assets/animewebhome.png";
+import reixel1 from "../assets/reixelnails1.png";
+import reixel2 from "../assets/reixelnails2.png";
+import reixel3 from "../assets/reixelnails3.png";
+import reixel4 from "../assets/reixelnails4.png";
+import reixel5 from "../assets/reixelnails5.png";
+import anime1 from "../assets/searchanime1.png"
+import anime2 from "../assets/searchanime2.png"
+import anime3 from "../assets/searchanime3.png"
 import juegonaves from "../assets/juegonaves.png";
 import js from "../assets/iconos/js.png";
 import css from "../assets/iconos/css.png";
 import html from "../assets/iconos/html.png";
 import localstorage from "../assets/iconos/localstorage.png";
 
+
 function Proyectos() {
   const reixelText = `Desarrollo de una aplicación web Full-Stack que permite a los usuarios, tras un proceso de autenticación, registrarse para gestionar citas o interactuar con imágenes mediante comentarios y "likes" desde cualquier dispositivo. Las imágenes y citas son publicadas exclusivamente por un administrador, quien también gestiona una agenda privada con todas las fechas y horarios de las citas, así como una base de datos que almacena los datos de contacto de todos los usuarios. Creado desde cero con Express.js, React y Bootstrap.`;
   const animewebText = `SearchAnime es un proyecto web que desarrollé en colaboración con mi compañero de IronHack, Huanye. El sitio está enfocado en el front-end y permite a los usuarios buscar cualquier tipo de anime a través de una API externa. Una característica destacada es la posibilidad de agregar comentarios a los animes buscados, proporcionando una experiencia interactiva, aunque no se implementaron sistemas de autenticación ni roles de usuario. Este proyecto fue una excelente oportunidad para aplicar y consolidar mis conocimientos en desarrollo web, trabajando en equipo en un entorno ágil. Además, utilizamos varias ramas en GitHub para integrar y gestionar eficientemente los avances de cada uno. Creado desde cero con React y Bootstrap.`;
   const gameText = ` Como mi primer proyecto, Spaceships Game es un juego interactivo basado en web que ofrece una experiencia de juego atractiva. Muestra habilidades de programación, diseño de juegos y desarrollo de interfaces de usuario.
 Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcamp, Spaceships Game demuestra mi capacidad para aplicar conocimientos teóricos a proyectos prácticos y desafiantes.`;
+
+const responsive = {
+  superLargeDesktop: {
+   
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+}
 
   return (
     <div id="proyectos" className="proyectos">
@@ -54,15 +83,58 @@ Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcam
         &lt;/&gt; Proyectos
       </h1>
       <div className="container-proyecto">
-        <img
-          src={reixelhome}
+        
+      <Carousel
+  responsive={responsive}
+  showDots={true}
+>
+<img
+          src={reixel2}
           style={{
-            width: "100%",
+            width: "98%",
             borderRadius: "10px",
             marginTop: "20px",
             marginBottom: "20px",
           }}
         />
+  <img
+          src={reixel1}
+          style={{
+            width: "98%",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        />
+  <img
+          src={reixel5}
+          style={{
+            width:"98%",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        />
+  <img
+          src={reixel3}
+          style={{
+            width:"98%",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        />
+
+        <img
+          src={reixel4}
+          style={{
+            width: "98%",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        />
+</Carousel>
         <h1
           className="saira-semi-condensed-semibold"
           style={{
@@ -323,15 +395,38 @@ Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcam
       </div>
 
       <div className="container-proyecto" style={{ marginTop: "40px" }}>
-        <img
-          src={animeweb}
+      <Carousel
+  responsive={responsive}
+  showDots={true}
+>
+<img
+          src={anime1}
           style={{
-            width: "100%",
+            width: "98%",
             borderRadius: "10px",
             marginTop: "20px",
             marginBottom: "20px",
           }}
         />
+  <img
+          src={anime3}
+          style={{
+            width: "98%",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        />
+  <img
+          src={anime2}
+          style={{
+            width:"98%",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        />
+</Carousel>
         <h1
           className="saira-semi-condensed-semibold"
           style={{
@@ -523,7 +618,7 @@ Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcam
             marginBottom: "10px",
           }}
         >
-          SearchAnime - Proyecto web de búsqueda de anime
+          Spaceships Game - Proyecto de minijuego web
         </h1>
         <div className="etiquetas-proyecto">
           <Chip

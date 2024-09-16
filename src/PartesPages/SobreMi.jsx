@@ -65,18 +65,9 @@ function SobreMi() {
           className="saira-semi-condensed-medium"
         >
           {" "}
-          aspirante a Front-End Developer
+          Front-End Developer
         </span>{" "}
-        decidido a impulsar mi carrera en el campo de la tecnología. Mi
-        formación incluye un
-        <span
-          style={{ color: "#ffbc1b" }}
-          className="saira-semi-condensed-medium"
-        >
-          {" "}
-          programa intensivo de 450 horas en desarrollo web
-        </span>
-        , donde adquirí un sólido manejo de
+        decidido a impulsar mi carrera en el campo de la tecnología. Tengo un sólido manejo de
         <span
           style={{ color: "#ffbc1b" }}
           className="saira-semi-condensed-medium"

@@ -67,37 +67,35 @@ function ExpLaboral() {
                   marginTop: "-70px",
                 }}
               >
-                Front-end Web Developer
+                Full-stack Developer
               </h1>
               <p
                 className="saira-semi-condensed-medium"
                 style={{ color: "#1b1b35", fontSize: "16px", margin: "0px" }}
               >
-                Open to work
+                Ironhack
               </p>
               <span
                 className="saira-semi-condensed-regular"
                 style={{ color: "#acacbd", fontSize: "14px" }}
               >
-                Actualmente...
+                Junio 2024
               </span>
               <p
                 className="saira-semi-condensed-regular"
                 style={{
-                  fontSize: "13.9px",
                   marginTop: "40px",
                   color: "rgb(75 85 99)",
                 }}
               >
-                Participé en un programa intensivo de 12 semanas con un total de
-                450 horas de formación en desarrollo web. Desarrollé habilidades
-                prácticas en front-end utilizando HTML, CSS, JavaScript, y React
-                y en back-end con Node.js y Express. Creé proyectos de
-                aplicaciones web reales, incluyendo una aplicación para un
-                cliente real en el sector de la belleza, que incluye
-                autenticación con distintos roles. Adquirí experiencia en el uso
-                de Visual Studio Code y en trabajo colaborativo utilizando
-                GitHub para control de versiones y gestión de proyectos.
+                Desarrollé habilidades prácticas en front-end utilizando HTML,
+                CSS, JavaScript, y React y en back-end con Node.js y Express.js.
+                Creé proyectos de aplicaciones web reales, incluyendo una
+                aplicación para un cliente real en el sector de la belleza, que
+                incluye autenticación con distintos roles. Adquirí experiencia
+                en el uso de Visual Studio Code y en trabajo colaborativo
+                utilizando GitHub para control de versiones y gestión de
+                proyectos.
               </p>
               <a
                 href="https://github.com/Germanmtz96"
@@ -135,7 +133,7 @@ function ExpLaboral() {
                   marginTop: "-70px",
                 }}
               >
-                Operador Polivalente en Supermercado
+                Repartidor
               </h1>
               <p
                 className="saira-semi-condensed-medium"
@@ -184,7 +182,7 @@ function ExpLaboral() {
                   marginTop: "-70px",
                 }}
               >
-                Cocinero
+                Encargado/Formador
               </h1>
               <p
                 className="saira-semi-condensed-medium"
@@ -202,8 +200,10 @@ function ExpLaboral() {
                 className="saira-semi-condensed-regular"
                 style={{ color: "rgb(75 85 99)" }}
               >
-                Contribuí a la formación del personal en múltiples tiendas que
-                abrieron en la zona de Alicante.
+                Contribuí a la formación de nuevos empleados en tiendas recién
+                inauguradas en la zona de Alicante, aprovechando mi experiencia
+                en cocina para asegurar una integración rápida y efectiva del
+                personal.
               </p>
             </TimelineContent>
           </TimelineItem>
