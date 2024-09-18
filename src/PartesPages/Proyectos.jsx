@@ -348,7 +348,7 @@ Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcam
       <div className="container-proyecto" style={{ marginTop: "40px" }}>
         <div className="contenido-proyecto-anime">
           <img
-          className="img-proyecto"
+          className="img-proyecto-anime"
             src={animeCuadrado}
             style={{
               width: "100%",
@@ -537,7 +537,7 @@ Desarrollado por mí mismo como un proyecto de capacitación en IronHack Bootcam
       <div className="container-proyecto" style={{ marginTop: "40px" }}>
       <div className="contenido-proyecto-minijuego">
         <img
-        className="img-proyecto"
+        className="img-proyecto-minijuego"
           src={juegonaves}
           style={{
             width: "100%",
