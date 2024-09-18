@@ -187,8 +187,8 @@ color: rgb(75 85 99);
 @media (min-width: 1000px) and (max-width: 1599px) {
   
   #root {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 30px;
     padding: 1rem;
     font-size: 1.3rem;
@@ -197,13 +197,122 @@ color: rgb(75 85 99);
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .experiencia-laboral{
+   transform: translate(-50%, 0%);
+   width:1400px;
+  }
+  .texto-exp{
+    margin-left: 30%;
+    margin-top: -70px!important;  
+  }
+  .dominos-barra-exp{
+    margin-top: -20px!important;
+  }
+  .dominos-dot-exp{
+    margin-top: -20px!important;
+  }
+  .mercadona-barra-exp{
+    margin-top: 0px!important;
+  }
+  .mercadona-dot-exp{
+    margin-top: 0px!important;
+  }
+  .developer-barra-exp{
+    margin-top: 0px!important;
+  }
+  .developer-dot-exp{
+    margin-top: 0px!important;
+  }
+  .intro{
+    max-width: 570px;
+  }
+  .presentacion{
+    margin-top: 80px;
+  }
+  .img-proyecto{
+    width: 550px!important;
+    height: 400px;
+  }
+  .contenido-proyecto-reixel{
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    margin-bottom: -40px!important;
+  }
+  .contenido-proyecto-anime{
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    margin-bottom: -40px!important;
+  }
+  .contenido-proyecto-minijuego{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    margin-bottom: -40px!important;
+  }
+  .titulos-proyectos{
+    position: relative;
+    transform: translate(0%, 30%);
+    padding-bottom: 30px;
+  }
+  .etiquetas-proyecto{
+    width: 450px;
+    position: relative;
+    transform: translate(-125%, 540%);
+  }
+  .etiquetas-proyecto-anime{
+    width: 450px;
+    position: relative;
+    transform: translate(-125%, 540%);
+  }
+  .etiquetas-proyecto-minijuego{
+    width: 450px;
+    position: relative;
+    transform: translate(-125%, 540%);
+  }
+  .texto-proyectos{
+    height: 450px;
+    position: relative;
+    transform: translate(0%, -20%);
+  }
+  .enlaces-proyecto-reixel{
+    position: relative;
+    transform: translate(50%, -450%);
+  }
+  .enlaces-proyecto-anime{
+    position: relative;
+    transform: translate(50%, -90%);
+  }
+  .enlaces-proyecto-minijuego{
+    position: relative;
+    transform: translate(50%, -630%);
+  }
+  .todo-menos-foto{
+    margin-left: 20px;
+  }
+  .foto-sobre-mi img{
+    margin-top: 20px!important;
+    margin-left: 30px;
+    width: 350px!important; 
+  }
+  .contenido-sobre-mi{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
 }
 @media (min-width: 1601px) {
   
   #root {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-top: 30px;
     padding: 1rem;
     font-size: 1.3rem;
@@ -215,6 +324,129 @@ color: rgb(75 85 99);
   .navbar{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .experiencia-laboral{
+    transform: translate(-66%, 0%);
+    width:1600px;
+   }
+   .texto-exp{
+     margin-left: 30%;
+     margin-top: -70px!important;  
+   }
+   .dominos-barra-exp{
+     margin-top: -200px!important;
+   }
+   .dominos-dot-exp{
+     margin-top: -170px!important;
+   }
+   .mercadona-barra-exp{
+     margin-top: -30px!important;
+   }
+   .mercadona-dot-exp{
+     margin-top: 0px!important;
+   }
+   .developer-barra-exp{
+     margin-top: 100px!important;
+   }
+   .developer-dot-exp{
+     margin-top: 130px!important;
+   }
+   .titulo-exp{
+    position: relative;
+    transform: translate(50%, 140%);
+   }
+   .chip-exp{
+    position: relative;
+    transform: translate(200%, 390%);
+   }
+   .intro{
+    max-width: 600px;
+   }
+   .presentacion{
+    position: relative;
+    transform: translate(12%, 25%);
+   }
+   .img-proyecto{
+    width: 550px!important;
+    height: 400px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .img-proyecto:hover {
+    box-shadow: 0 0 10px 2px #ffbc1b;
+    transform: scale(1.03); 
+}
+  .contenido-proyecto-reixel{
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    margin-bottom: -40px!important;
+  }
+  .contenido-proyecto-anime{
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    margin-bottom: -40px!important;
+  }
+  .contenido-proyecto-minijuego{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    margin-bottom: -40px!important;
+  }
+  .titulos-proyectos{
+    position: relative;
+    transform: translate(0%, 30%);
+    padding-bottom: 30px;
+  }
+  .etiquetas-proyecto{
+    width: 450px;
+    position: relative;
+    transform: translate(-125%, 540%);
+  }
+  .etiquetas-proyecto-anime{
+    width: 450px;
+    position: relative;
+    transform: translate(-125%, 540%);
+  }
+  .etiquetas-proyecto-minijuego{
+    width: 450px;
+    position: relative;
+    transform: translate(-125%, 540%);
+  }
+  .texto-proyectos{
+    height: 450px;
+    position: relative;
+    transform: translate(0%, -20%);
+  }
+  .enlaces-proyecto-reixel{
+    position: relative;
+    transform: translate(50%, -450%);
+  }
+  .enlaces-proyecto-anime{
+    position: relative;
+    transform: translate(50%, -90%);
+  }
+  .enlaces-proyecto-minijuego{
+    position: relative;
+    transform: translate(50%, -630%);
+  }
+  .todo-menos-foto{
+    margin-left: 20px;
+  }
+  .foto-sobre-mi img{
+    margin-top: 20px!important;
+    margin-left: 30px;
+    width: 250px!important; 
+  }
+  .contenido-sobre-mi{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
 }

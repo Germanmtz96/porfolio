@@ -38,7 +38,7 @@ function Intro() {
       </h1>
       <p
         style={{ fontSize: "20px", color: "rgb(75 85 99)" }}
-        className="saira-semi-condensed-medium"
+        className="intro saira-semi-condensed-medium"
       >
         Un aspirante a{" "}
         <span

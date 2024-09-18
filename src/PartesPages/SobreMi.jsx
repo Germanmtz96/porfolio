@@ -36,7 +36,9 @@ function SobreMi() {
           Sobre mí
         </h1>
       </div>
+      <div className="contenido-sobre-mi">
       <div
+      className="foto-sobre-mi"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -55,11 +57,12 @@ function SobreMi() {
           }}
         />
       </div>
+      <div className="texto-sobre-mi">
       <p
         className="saira-semi-condensed-regular"
         style={{ color: "rgb(75 85 99)" }}
       >
-        Hola, soy Germán, un
+        Soy un
         <span
           style={{ color: "#ffbc1b" }}
           className="saira-semi-condensed-medium"
@@ -67,7 +70,7 @@ function SobreMi() {
           {" "}
           Front-End Developer
         </span>{" "}
-        decidido a impulsar mi carrera en el campo de la tecnología. Tengo un sólido manejo de
+        decidido a impulsar mi carrera en el campo tecnológico. Tengo un sólido manejo de
         <span
           style={{ color: "#ffbc1b" }}
           className="saira-semi-condensed-medium"
@@ -75,7 +78,7 @@ function SobreMi() {
           {" "}
           HTML, CSS, JavaScript, y React
         </span>
-        , así como experiencia en back-end con
+        , y en back-end con
         <span
           style={{ color: "#ffbc1b" }}
           className="saira-semi-condensed-medium"
@@ -89,18 +92,18 @@ function SobreMi() {
         className="saira-semi-condensed-regular"
         style={{ color: "rgb(75 85 99)" }}
       >
-        He desarrollado y colaborado en varios proyectos web, como
+        He desarrollado y colaborado en varios proyectos web,
         <span
           style={{ color: "#ffbc1b" }}
           className="saira-semi-condensed-medium"
         >
           {" "}
-          Reixelnails, una aplicación Full-Stack para la gestión de citas e
-          interacción social, y SearchAnime, un sitio web que permite buscar
+           una aplicación Full-Stack para la gestión de citas e
+          interacción social, y un sitio web que permite buscar
           animes a través de una API externa
         </span>
-        . Estos proyectos me han permitido aplicar y consolidar mis
-        conocimientos en desarrollo web, trabajando en equipo y enfrentando
+        . Estos proyectos me han permitido consolidar mis
+        conocimientos, trabajando en equipo y enfrentando
         desafíos reales.
       </p>{" "}
       <p
@@ -113,19 +116,14 @@ function SobreMi() {
           className="saira-semi-condensed-medium"
         >
           {" "}
-          trabajé en Mercadona y Domino's Pizza, donde desarrollé habilidades de
+          desarrollé habilidades de
           adaptabilidad, trabajo en equipo, y formación de personal
         </span>
         .
       </p>{" "}
-      <p
-        className="saira-semi-condensed-regular"
-        style={{ color: "rgb(75 85 99)" }}
-      >
-        Estoy abierto a nuevas oportunidades para continuar creciendo como
-        desarrollador y contribuir con mis habilidades en proyectos innovadores
-        y desafiantes.
-      </p>
+      
+      </div>
+      </div>
     </div>
   );
 }

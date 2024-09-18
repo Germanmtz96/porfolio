@@ -19,6 +19,7 @@ function ExpLaboral() {
               sx={{ width: 30, height: 30 }}
             />
           }
+          className="chip-exp"
           style={{
             backgroundColor: "white",
             color: "#1b1b35",
@@ -28,7 +29,7 @@ function ExpLaboral() {
           }}
         ></Chip>
         <h1
-          className="saira-semi-condensed-semibold"
+          className="titulo-exp saira-semi-condensed-semibold"
           style={{
             backgroundColor: "white",
             fontSize: "30px",
@@ -46,6 +47,7 @@ function ExpLaboral() {
           <TimelineItem>
             <TimelineSeparator style={{ height: "420px" }}>
               <TimelineDot
+              className="developer-dot-exp"
                 style={{
                   padding: "0px",
                   marginTop: "-40px",
@@ -59,7 +61,7 @@ function ExpLaboral() {
             </TimelineSeparator>
             <TimelineContent>
               <h1
-                className="saira-semi-condensed-semibold"
+                className="developer-barra-exp saira-semi-condensed-semibold"
                 style={{
                   color: "#ffbc1b",
                   fontSize: "18px",
@@ -82,7 +84,7 @@ function ExpLaboral() {
                 Junio 2024
               </span>
               <p
-                className="saira-semi-condensed-regular"
+                className="texto-exp saira-semi-condensed-regular"
                 style={{
                   marginTop: "40px",
                   color: "rgb(75 85 99)",
@@ -98,6 +100,7 @@ function ExpLaboral() {
                 proyectos.
               </p>
               <a
+              className="texto-exp"
                 href="https://github.com/Germanmtz96"
                 style={{
                   color: "#ffbc1b",
@@ -110,11 +113,12 @@ function ExpLaboral() {
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
-            <TimelineSeparator style={{ height: "300px" }}>
+            <TimelineSeparator style={{ height: "450px" }}>
               <TimelineDot
+              className="mercadona-dot-exp"
                 style={{
                   padding: "0px",
-                  marginTop: "-40px",
+                  marginTop: "-30px",
                   marginBottom: "0px",
                   width: "8px",
                   height: "8px",
@@ -125,12 +129,12 @@ function ExpLaboral() {
             </TimelineSeparator>
             <TimelineContent>
               <h1
-                className="saira-semi-condensed-semibold"
+                className=" mercadona-barra-exp saira-semi-condensed-semibold"
                 style={{
                   color: "#ffbc1b",
                   fontSize: "18px",
                   margin: "0px",
-                  marginTop: "-70px",
+                  marginTop: "-60px",
                 }}
               >
                 Repartidor
@@ -148,7 +152,7 @@ function ExpLaboral() {
                 Mayo 2019
               </span>
               <p
-                className="saira-semi-condensed-regular"
+                className="texto-exp saira-semi-condensed-regular"
                 style={{ color: "rgb(75 85 99)" }}
               >
                 He acumulado experiencia en diversas áreas, como carnicería,
@@ -162,9 +166,10 @@ function ExpLaboral() {
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot
+              className="dominos-dot-exp"
                 style={{
                   padding: "0px",
-                  marginTop: "-40px",
+                  marginTop: "-180px",
                   marginBottom: "0px",
                   width: "8px",
                   height: "8px",
@@ -174,12 +179,12 @@ function ExpLaboral() {
             </TimelineSeparator>
             <TimelineContent>
               <h1
-                className="saira-semi-condensed-semibold"
+                className="dominos-barra-exp saira-semi-condensed-semibold"
                 style={{
                   color: "#ffbc1b",
                   fontSize: "18px",
                   margin: "0px",
-                  marginTop: "-70px",
+                  marginTop: "-210px",
                 }}
               >
                 Encargado/Formador
@@ -197,7 +202,7 @@ function ExpLaboral() {
                 Abril 2016
               </span>
               <p
-                className="saira-semi-condensed-regular"
+                className="texto-exp saira-semi-condensed-regular"
                 style={{ color: "rgb(75 85 99)" }}
               >
                 Contribuí a la formación de nuevos empleados en tiendas recién
