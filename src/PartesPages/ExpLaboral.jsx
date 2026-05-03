@@ -69,19 +69,19 @@ function ExpLaboral() {
                   marginTop: "-70px",
                 }}
               >
-                Full-stack Developer
+                Web Developer
               </h1>
               <p
                 className="saira-semi-condensed-medium"
                 style={{ color: "#1b1b35", fontSize: "16px", margin: "0px" }}
               >
-                Ironhack
+                PangoStudio
               </p>
               <span
                 className="saira-semi-condensed-regular"
                 style={{ color: "#acacbd", fontSize: "14px" }}
               >
-                Junio 2024
+                2025-2026
               </span>
               <p
                 className="texto-exp saira-semi-condensed-regular"
@@ -90,14 +90,14 @@ function ExpLaboral() {
                   color: "rgb(75 85 99)",
                 }}
               >
-                Desarrollé habilidades prácticas en front-end utilizando HTML,
-                CSS, JavaScript, y React y en back-end con Node.js y Express.js.
-                Creé proyectos de aplicaciones web reales, incluyendo una
-                aplicación para un cliente real en el sector de la belleza, que
-                incluye autenticación con distintos roles. Adquirí experiencia
-                en el uso de Visual Studio Code y en trabajo colaborativo
-                utilizando GitHub para control de versiones y gestión de
-                proyectos.
+                Como desarrollador en entorno remoto, gestioné con autonomía la resolución
+                de problemas técnicos y la organización de proyectos complejos. Mi trabajo
+                abarcó desde la creación de varias aplicaciones para el ecosistema Shopify y
+                el desarrollo de sistemas Back Office con filtros avanzados para la gestión y
+                el control de grandes volúmenes de datos, hasta la programación de
+                experiencias visuales interactivas para instituciones universitarias. En estos
+                proyectos, transformé temarios académicos en entornos dinámicos utilizando
+                HTML, CSS, JavaScript y GSAP.
               </p>
               <a
               className="texto-exp"
@@ -137,29 +137,32 @@ function ExpLaboral() {
                   marginTop: "-60px",
                 }}
               >
-                Repartidor
+                Full-stack Developer
               </h1>
               <p
                 className="saira-semi-condensed-medium"
                 style={{ color: "#1b1b35", fontSize: "16px", margin: "0px" }}
               >
-                Mercadona
+                Ironhack
               </p>
               <span
                 className="saira-semi-condensed-regular"
                 style={{ color: "#acacbd", fontSize: "14px" }}
               >
-                Mayo 2019
+                Junio-Agosto 2024
               </span>
               <p
                 className="texto-exp saira-semi-condensed-regular"
                 style={{ color: "rgb(75 85 99)" }}
               >
-                He acumulado experiencia en diversas áreas, como carnicería,
-                charcutería, cajero, reparto, y fruta/verdura, lo que me ha
-                permitido desarrollar una gran adaptabilidad y habilidades de
-                trabajo en equipo, dado que todos estos roles requieren
-                coordinar procesos en cadena.
+                Desarrollé habilidades prácticas en front-end utilizando HTML,
+                CSS, JavaScript, y React y en back-end con Node.js y Express.js.
+                Creé proyectos de aplicaciones web reales, incluyendo una
+                aplicación para un cliente real en el sector de la belleza, que
+                incluye autenticación con distintos roles. Adquirí experiencia
+                en el uso de Visual Studio Code y en trabajo colaborativo
+                utilizando GitHub para control de versiones y gestión de
+                proyectos.
               </p>
             </TimelineContent>
           </TimelineItem>
@@ -187,28 +190,29 @@ function ExpLaboral() {
                   marginTop: "-210px",
                 }}
               >
-                Encargado/Formador
+                Repartidor
               </h1>
               <p
                 className="saira-semi-condensed-medium"
                 style={{ color: "#1b1b35", fontSize: "16px", margin: "0px" }}
               >
-                Domino's Pizza
+                Mercadona
               </p>
               <span
                 className="saira-semi-condensed-regular"
                 style={{ color: "#acacbd", fontSize: "14px" }}
               >
-                Abril 2016
+                2019-2024
               </span>
               <p
                 className="texto-exp saira-semi-condensed-regular"
                 style={{ color: "rgb(75 85 99)" }}
               >
-                Contribuí a la formación de nuevos empleados en tiendas recién
-                inauguradas en la zona de Alicante, aprovechando mi experiencia
-                en cocina para asegurar una integración rápida y efectiva del
-                personal.
+                He acumulado experiencia en diversas áreas, como carnicería,
+                charcutería, cajero, reparto, y fruta/verdura, lo que me ha
+                permitido desarrollar una gran adaptabilidad y habilidades de
+                trabajo en equipo, dado que todos estos roles requieren
+                coordinar procesos en cadena.
               </p>
             </TimelineContent>
           </TimelineItem>

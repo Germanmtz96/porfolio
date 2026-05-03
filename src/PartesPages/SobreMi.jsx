@@ -93,34 +93,71 @@ function SobreMi() {
             className="saira-semi-condensed-regular"
             style={{ color: "rgb(75 85 99)" }}
           >
-            He desarrollado y colaborado en varios proyectos web,
+            He desarrollado y colaborado en una
             <span
               style={{ color: "#ffbc1b" }}
               className="saira-semi-condensed-medium"
             >
               {" "}
-              una aplicación Full-Stack para la gestión de citas e interacción
-              social, y un sitio web que permite buscar animes a través de una
+              aplicación Full-Stack
+            </span>{" "}
+            para la gestión de citas e interacción social, un
+            <span
+              style={{ color: "#ffbc1b" }}
+              className="saira-semi-condensed-medium"
+            >
+              {" "}
+              sitio web interactivo basado en animaciones con GSAP,
+            </span>{" "}
+            diseñado como una experiencia narrativa gamificada donde los
+            usuarios navegan entre “salas”, responden preguntas y consumen
+            contenido multimedia a través de una
+            <span
+              style={{ color: "#ffbc1b" }}
+              className="saira-semi-condensed-medium"
+            >
+              {" "}
               API externa
+            </span>{" "}
+            y una
+            <span
+              style={{ color: "#ffbc1b" }}
+              className="saira-semi-condensed-medium"
+            >
+              {" "}
+              aplicación para la Shopify App Store
+            </span>{" "}
+            que permite a tiendas generar automáticamente archivos llm.txt con
+            un solo clic, optimizando la estructura del contenido para
+            <span
+              style={{ color: "#ffbc1b" }}
+              className="saira-semi-condensed-medium"
+            >
+              {" "}
+              mejorar el SEO
+            </span>{" "}
+            y facilitar su interpretación por
+            <span
+              style={{ color: "#ffbc1b" }}
+              className="saira-semi-condensed-medium"
+            >
+              {" "}
+              agentes de inteligencia artificial.
             </span>
-            . Estos proyectos me han permitido consolidar mis conocimientos,
-            trabajando en equipo y enfrentando desafíos reales.
-          </p>{" "}
+          </p>
           <p
             className="saira-semi-condensed-regular"
             style={{ color: "rgb(75 85 99)" }}
           >
-            Antes de mi transición al desarrollo web,
+            Estos proyectos me han permitido consolidar mis conocimientos,
             <span
               style={{ color: "#ffbc1b" }}
               className="saira-semi-condensed-medium"
             >
               {" "}
-              desarrollé habilidades de adaptabilidad, trabajo en equipo, y
-              formación de personal
+              trabajando en equipo y adaptandome en desafíos reales.
             </span>
-            .
-          </p>{" "}
+          </p>
         </div>
       </div>
     </div>

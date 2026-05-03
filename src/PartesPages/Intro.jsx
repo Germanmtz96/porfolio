@@ -40,7 +40,7 @@ function Intro() {
         style={{ fontSize: "20px", color: "rgb(75 85 99)" }}
         className="intro saira-semi-condensed-medium"
       >
-        Un aspirante a{" "}
+        Un {" "}
         <span
           style={{ color: "#ffbc1b", fontSize: "22px" }}
           className="saira-semi-condensed-semibold"
